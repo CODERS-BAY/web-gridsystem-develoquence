@@ -97,6 +97,7 @@ ul {
   background-position: center;
   background-image: url(../images/hintergrund.jpg); 
   background-size: cover;
+  color: #fff;
   display: flex;  
   height: 40vh;
   justify-content: center;
@@ -111,9 +112,11 @@ ul {
 }
 
 #mainimage {
+  align-items: center;
   background-position: center;
   background-image: url(../images/frontpage.jpg);
   background-size: cover;
+  display: flex; 
   height: 40vh;
   justify-content: center;
   margin-bottom: 50px; 
@@ -138,10 +141,25 @@ ul {
   align-items: center;
   display: flex;
   flex-direction: column;
+  height: 100%;
   justify-content: space-between;
   text-align: center;
-  height: 100%;
 }
 
+.flexbox-container-rose {
+  align-items: center; 
+  background-color: #cd8c95; 
+  color: #fff; 
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  padding: 10px; 
+  text-align: center;
+}
+
+.flexbox-container-rose h3 {
+ color: #fff;
+}
 
 
