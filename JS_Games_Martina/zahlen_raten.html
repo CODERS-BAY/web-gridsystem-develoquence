@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Zahlen raten</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+</head>
+
+<body id="zahlenimage">
+
+    <header>
+        <div id="header">
+            <a id="logo" href="index.html">Marty's Gamecorner</img></a>
+            <nav id="mainmenu">
+                <ul>
+                    <li><a href="handyweitwurf.html">Handyweitwurf</a></li>
+                    <li><a href="schere_stein_papier.html">Schere-Stein-Papier</a></li>
+                    <li><a href="zahlen_raten.html">Zahlen raten</a></li>
+                    <li><a href="code_breaker.html">Code-Breaker</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="descriptionContainer" id="hide">
+            <h1>Zahlen raten</h1>
+            <p> Errate die Zahl, die der Computer für dich generiert hat.</p>
+            <div class="input-container">
+                <p> Lege zuerst eine Obergrenze fest:</p>
+                <input id='obergrenze' type='number' name='obergrenze' placeholder="Grenze"> </input>
+                <div class='button' onclick="obergrenze()"> <a>Festlegen</a></div>
+
+                <p id="grenzzahl"> Obergrenze:</p>
+            </div>
+
+            <div class="input-container">
+                <p> Wie oft möchtest du es versuchen?</p>
+                <p>Lege hier die Anzahl der Versuche fest:</p>
+                <input id="counter" type="number" name="counter" placeholder="Versuche">
+                <p class="error hide">Bitte gib eine Zahl über 0 ein!</p>
+                <div class='button' onclick="saveCounter()"> <a>Festlegen</a></div>
+                <p id="anzahlVersuche"> Anzahl der Versuche:</p>
+            </div>
+
+            <div class="input-container">
+                <p>Gib nun deine Zahl ein:</p>
+                <input id='zahl' type='number' name='zahl' placeholder="Zahl"> </input>
+                <div class='button' onclick="checkNumber()"> <a>Check</a></div>
+                <p id="hint"></p>
+            </div>
+
+        </div>
+        <div id="messageBoxWin">
+            <p>Herzlichen Glückwunsch! Du hast gegen den Computer gewonnen! Möchtest du nochmals spielen?</p>
+            <div class="buttonWrapper">
+                <div class="button" onclick="playAgain()"><a>Ja</a></div>
+                <div class="button" onclick="window.location.href='index.html'"><a>Nein</a></div>
+            </div>
+        </div>
+        <div id="messageBoxLoose">
+            <p>Leider hat diesmal der Computer gewonnen. Möchtest du es nochmals versuchen?</p>
+            <div class="buttonWrapper">
+                <div class="button" onclick="playAgain()"><a>Ja</a></div>
+                <div class="button" onclick="window.location.href='index.html'"><a>Nein</a></div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</html>

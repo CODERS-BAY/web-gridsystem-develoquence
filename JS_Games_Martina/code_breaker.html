@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Code-Breaker</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+</head>
+
+<body id="codeimage">
+
+    <header>
+        <div id="header">
+            <a id="logo" href="index.html">Marty's Gamecorner</img></a>
+            <nav id="mainmenu">
+                <ul>
+                    <li><a href="handyweitwurf.html">Handyweitwurf</a></li>
+                    <li><a href="schere_stein_papier.html">Schere-Stein-Papier</a></li>
+                    <li><a href="zahlen_raten.html">Zahlen raten</a></li>
+                    <li><a href="code_breaker.html">Code-Breaker</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="descriptionContainer" id="hide">
+            <h1>Code-Breaker</h1>
+            <p> Errate den dreistelligen Zahlencode.</p>
+            <div class="input-container">
+                <p> Generiere hier einen Code, um ihn anschließend zu knacken:</p>
+                <div class="button" onclick="codeGenerieren()"><a>Klick</a></div>
+            </div>
+            <div class="input-container">
+                <input id="userCode" type="number" name="userCode" min="111" max="999" placeholder="Zahlencode">
+                <div class='button' onclick="codeKnacken()"> <a>Code knacken</a></div>
+                <p id="benachrichtigung1"></p>
+                <p id="benachrichtigung2"></p>
+                <p id="benachrichtigung3"></p>
+                <p id="anzahlVersuche"> Anzahl der Versuche:</p>
+            </div>
+        </div>
+        <div id="messageBoxWin">
+            <p>Herzlichen Glückwunsch! Du hast den Code erraten! Möchtest du nochmals spielen?</p>
+            <div class="buttonWrapper">
+                <div class="button" onclick="playAgain()"><a>Ja</a></div>
+                <div class="button" onclick="window.location.href='index.html'"><a>Nein</a></div>
+            </div>
+        </div>
+        <div id="messageBoxLoose">
+            <p>Leider hast du den Code nicht erraten. Möchtest du es nochmals versuchen?</p>
+            <div class="buttonWrapper">
+                <div class="button" onclick="playAgain()"><a>Ja</a></div>
+                <div class="button" onclick="window.location.href='index.html'"><a>Nein</a></div>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
