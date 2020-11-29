@@ -1,0 +1,64 @@
+<!-- (Anzeige?-) Fehler: Streifen! -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Schere-Stein-Papier</title>
+    <link rel="stylesheet" href="CSS/all.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+</head>
+
+<body id="schereimage">
+
+    <header>
+        <div id="header">
+            <a id="logo" href="index.html">Marty's Gamecorner</img></a>
+            <nav id="mainmenu">
+                <ul>
+                    <li><a href="handyweitwurf.html">Handyweitwurf</a></li>
+                    <li><a href="schere_stein_papier.html">Schere-Stein-Papier</a></li>
+                    <li><a href="zahlen_raten.html">Zahlen raten</a></li>
+                    <li><a href="code_breaker.html">Code-Breaker</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="descriptionContainer" class="white" id="hide">
+            <h1>Schere – Stein – Papier</h1>
+            <h2>Regeln:</h2>
+            <br>
+            <p>1. Schere gewinnt gegen Papier</p>
+            <p>2. Papier gewinnt gegen Stein</p>
+            <p>3. Stein gewinnt gegen Schere</p>
+            <div id="symbole">
+                <i class="fas fa-hand-scissors" onclick="startGame('scissors')"></i>
+                <i class="fas fa-hand-rock" onclick="startGame('rock')"></i>
+                <i class="fas fa-hand-paper" onclick="startGame('paper')"></i>
+            </div>
+            <p id=rundenstand></p>
+        </div>
+        <div id="messageBoxWin">
+            <p>Herzlichen Glückwunsch! Du hast gegen den Computer gewonnen! Möchtest du nochmals spielen?</p>
+            <div class="buttonWrapper">
+                <div class="button" onclick="playAgain()"><a>Ja</a></div>
+                <div class="button" onclick="window.location.href='index.html'"><a>Nein</a></div>
+            </div>
+        </div>
+        <div id="messageBoxLoose">
+            <p>Leider hat diesmal der Computer gewonnen. Möchtest du es nochmals versuchen?</p>
+            <div class="buttonWrapper">
+                <div class="button" onclick="playAgain()"><a>Ja</a></div>
+                <div class="button" onclick="window.location.href='index.html'"><a>Nein</a></div>
+            </div>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

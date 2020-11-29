@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Handyweitwurf</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+</head>
+
+<body id="handyimage">
+
+    <header>
+        <div id="header">
+            <a id="logo" href="index.html">Marty's Gamecorner</img></a>
+            <nav id="mainmenu">
+                <ul>
+                    <li><a href="handyweitwurf.html">Handyweitwurf</a></li>
+                    <li><a href="schere_stein_papier.html">Schere-Stein-Papier</a></li>
+                    <li><a href="zahlen_raten.html">Zahlen raten</a></li>
+                    <li><a href="code_breaker.html">Code-Breaker</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="descriptionContainer" id="hide">
+            <h1>Handyweitwurf</h1>
+            <p> In diesem Spiel sollst du mit deinem Handy ein Monster treffen.</p>
+            <p> Gib dazu den Winkel und die Kraft, mit der du das Handy wirfst, ein.</p>
+            <br>
+            <p id="addValue">Entfernung zum Monster: </p>
+
+            <div class="input-container">
+                <div class="center">
+                    <p>Gib ein, wie oft du es versuchen möchtest:</p>
+                    <input id="counter" type="number" name="counter" placeholder="Runden">
+                    <p class="error hide">Bitte gib eine Zahl über 0 ein!</p>
+                    <div class="button" onclick="saveCounter()"><a>Festlegen</a></div>
+                    <p id="anzahlVersuche"> Anzahl der Versuche:</p>
+                </div>
+            </div>
+            <div class="input-container">
+                <div class="center">
+                    <p>Wähle Kraft, Winkel und Planet:</p>
+                    <br>
+                    <div class="center">
+                        <label>Kraft:</label>
+                        <input id='power' type='number' name='power' placeholder="Kraft"> </input>
+                    </div>
+                    <div class="center">
+                        <label>Winkel:</label>
+                        <input id='angle' type='number' name='angle' min="1" max="90" placeholder="1 – 90"></input>
+                    </div>
+                    <label class="center">Planet:
+                        <select id='selectPlanet'>
+                            <option id='earth' value='9.81'>Erde</option>
+                            <option id='moon' value='1.62'>Mond</option>
+                            <option id='mars' value='3.69'>Mars</option>
+                            <option id='jupiter' value='24.79'>Jupiter</option>
+                        </select>
+                    </label>
+                    <div class='button' onclick="shoot()"> <a>Shoot</a></div>
+                    <p id="wurfErgebnis"></p>
+                </div>
+            </div>
+        </div>
+        <div id="messageBoxWin">
+            <p>Herzlichen Glückwunsch! Du hast das Monster getroffen! Möchtest du nochmals spielen?</p>
+            <div class="buttonWrapper">
+                <div class="button" onclick="playAgain()"><a>Ja</a></div>
+                <div class="button" onclick="window.location.href='index.html'"><a>Nein</a></div>
+            </div>
+        </div>
+        <div id="messageBoxLoose">
+            <p>Leider hat diesmal das Monster gewonnen. Möchtest du es nochmals versuchen?</p>
+            <div class="buttonWrapper">
+                <div class="button" onclick="playAgain()"><a>Ja</a></div>
+                <div class="button" onclick="window.location.href='index.html'"><a>Nein</a></div>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+}
+
+a,
+label,
+p,
+::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body,
+hmtl {
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: #d4054d;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.6rem;
+  margin-top: 30px;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+input,
+select {
+  border-width: 1px;
+  border-radius: 20px;
+  display: block;
+  margin: 5px auto;
+  width: 80px;
+}
+
+li > a {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.6rem;
+}
+
+main {
+  display: block;
+  margin: 0 auto; 
+  margin-top: 50px;
+  width: 50%;
+}
+
+nav {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav a {
+  color: #fff;
+  margin-right: 30px;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:active,
+.error {
+  color: #d4054d;
+}
+p {
+  margin: 3px; 
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 0px;
+}
+
+#anzahlVersuche,
+#playAgain,
+#grenzzahl,
+#spielstand,
+#wurfErgebnis,
+.error,
+.messageSorry {
+  display: none;
+}
+
+#codeimage {
+  background: url(../images/code.jpg) no-repeat center;
+  background-size: cover;
+}
+
+#handyimage {
+  background: url(../images/handy.jpg) no-repeat center;
+  background-size: cover;
+}
+
+#header {
+  align-items: center;
+  background-color: rgba(22, 21, 21, 0.8);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+#hide {
+  display: table;
+}
+
+#indeximage {
+  background: url(../images/index.jpg) no-repeat center;
+  background-size: cover;
+}
+
+#logo {
+  color: #fff;
+  margin-right: 30px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.6rem;
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+#logo:hover {
+  color: #d4054d;
+}
+
+#messageBoxWin {
+  background-color: rgba(129, 197, 253, 0.801);
+  border-radius: 20px;
+  display: none;
+  flex-direction: column;
+  margin: 30px;
+  padding: 15px;
+  text-align: center;
+}
+
+#messageBoxLoose {
+  background-color: rgba(156, 129, 253, 0.801);
+  border-radius: 20px;
+  display: none;
+  flex-direction: column;
+  margin: 30px;
+  padding: 15px;
+  text-align: center;
+}
+
+#schereimage {
+  background: url(../images/schere.jpg) no-repeat center;
+  background-size: cover;
+}
+
+#zahlenimage {
+  background: url(../images/zahlen.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.button {
+  background-color: #474144;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 10px; 
+  padding: 10px;
+  width: 120px;
+}
+
+.button:hover {
+  background-color: #d4054d;
+  transition: 0.5s;
+}
+
+.button a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button a:hover {
+  text-decoration: none;
+}
+
+.button a:visited {
+  color: #fff;
+}
+
+.buttonWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.descriptionContainer {
+  background-color: rgba(255, 255, 255, 0.600);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px; 
+  text-align: center;
+  width: 100%;
+}
+
+.center {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.fas {
+  color: #474144;
+  font-size: 5rem;
+  margin: 30px;
+  margin-top: 50px;
+}
+
+.fas:hover {
+  color: #d4054d;
+  cursor: pointer;
+}
+
+.flexGames {
+  display: flex;
+  margin-top: 400px;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.game {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.game-container {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  flex-basis: calc(100% / 4);
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 30px;
+  padding: 0 15px 15px 15px;
+  text-align: center;
+}
+
+.game-container:hover {
+  background-color: #dbf6f9;
+}
+
+.input-container {
+  align-items: center;
+  background-color: hsl(88, 87%, 88%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto 20px;
+  padding: 15px;
+  width: 400px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+::placeholder {
+  text-align: center;
+}
